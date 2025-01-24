@@ -254,6 +254,33 @@ footer
     word-spacing: 3px;
     color: #fe5552;
 }
+.icons 
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.icons i 
+{
+    font-size: 24px;
+    color: #e1c2bd;
+    background-color: #f93733;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    cursor: pointer;
+}
+.icons i:hover
+{
+    background-color: whitesmoke;
+    color: #f93733;
+}
 @media(max-width:800px)
 {
     body 
