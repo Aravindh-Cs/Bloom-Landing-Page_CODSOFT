@@ -1,0 +1,378 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    background-color: #e1c2bd;
+}
+header
+{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+    background-color: rgb(249, 137, 154);
+}
+.logo
+{
+    width: 20%;
+    padding-left: 10px;
+    color: rgb(109, 3, 63);
+}
+nav 
+{
+    width: 80%;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    text-transform: capitalize;
+    height: 30px;
+}
+nav ul li a
+{
+    color: rgb(82, 2, 29);
+    font-weight: bold;
+}
+.menu 
+{
+    display: none;
+}
+.bgimg
+{
+    position: relative;
+}
+.bgimg img 
+{
+    width: 100%;
+    height: 96vh;
+    object-fit: fill;
+}
+.mobilebg
+{
+    display: none;
+}
+.homepage
+{
+    position: absolute;
+    top: 0;
+    height: 96vh;
+    width: 60%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    color:  rgb(163, 4, 65);
+    line-height: 1.5;
+}
+.homepage h2
+{
+    text-transform: capitalize;
+}
+.cards
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: #4f4e4e;
+}
+.cards .left 
+{
+    width: 50%;
+    line-height: 4;
+}
+.cards .left p 
+{
+    line-height: 2;
+    font-size: 1.2em;
+}
+.cards .right
+{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.card 
+{
+    border-radius: 50% 50% 0 0;
+    border: 2px solid black;
+    width: 300px;
+}
+.card img 
+{
+    height: 280px;
+    border-radius: 50% 50% 0 0;
+    object-fit: fill;
+    width: 100%;
+}
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.customize
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: white;
+    color: #fe5552;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}.customize .parts
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    color: #fa807e;
+}
+.parts .opt 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.parts .opt span
+{
+    font-size: 20px;
+}
+.parts .opt p
+{
+    font-size: 20px;
+}
+.customize button
+{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid palevioletred;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.gallery
+{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: rgb(209, 4, 4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.galleryimg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.gallery img
+{
+    height: 230px;
+    width: 330px;
+    object-fit: fill;
+    cursor: pointer;
+}
+.gallery img:hover
+{
+    transition: 1s;
+    height: 270px;
+    width: 360px;
+    transform: scale(1.2);
+}
+.contact 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    color: #f93733;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+.contact ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-transform: capitalize;
+}
+.contact ul li a
+{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.line
+{
+    background-color: #4f4e4e;
+    width: 100%;
+    height: 1.6px;
+}
+footer
+{
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    text-align: center;
+    word-spacing: 3px;
+    color: #fe5552;
+}
+@media(max-width:800px)
+{
+    body 
+    {
+        background-color: #ffabaa;
+    }
+    header 
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        cursor: pointer;
+        background:rgba(231, 56, 82, 0.4);
+    }
+    .line1,.line2,.line3
+    {
+        background-color: #e1c2bd;
+        margin-bottom: 1.8px;
+        height: 3px;
+        width: 20px;
+        cursor: pointer;
+    }
+    .active
+    {
+        display: flex;
+    }
+    nav 
+    {
+        display: none;
+        z-index: 5;
+        width: 100%;
+        background: rgb(244, 139, 157);
+        height: 170px;
+        position: absolute;
+        top: 33px;
+        z-index: 9;
+    }
+    nav ul
+    {
+        flex-direction: column;
+        gap: 5px;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+    .desktopbg
+    {
+        display: none;
+    }
+    .mobilebg
+    {
+        display: flex;
+    }
+    .homepage
+    {
+        top: 20%;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 1.4em;
+        padding: 0;
+    }
+    .cards
+    {
+        flex-direction: column;
+    }
+    .cards .left,.cards .right
+    {
+        width: 100%;
+    }
+    .card 
+    {
+        width: 200px;
+    }
+    .card img 
+    {
+        height: 230px;
+    }
+    .card
+    {
+        font-size: .7em;
+    }
+    .customize .parts 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px
+    }
+    .opt img 
+    {
+        height: 150px;
+        width: 120px;
+    }
+    .gallery img 
+    {
+        width: 270px;
+        height: 270px;
+    }
+    .gallery img:hover
+    {
+        transition: 1s;
+        height: 270px;
+        width: 300px;
+        transform: scale(1.1);
+    }
+    .contact ul 
+    {
+        justify-content: center;
+    }
+    .contact ul li a 
+    {
+        font-size: 21px;
+    }
+}

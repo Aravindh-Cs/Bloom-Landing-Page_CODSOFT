@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h4>BLOOM.</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#customize">customize</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="bgimg">
+            <img src="img/bg.jpg" alt="" class="desktopbg">
+            <img src="img/mobbg.jpeg" alt="" class="mobilebg">
+        </div>
+        <div class="homepage" id="home">
+                <h2>flowers make memories!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel consectetur magni repudiandae? Odio culpa quis, possimus facere, repellendus est ad atque laboriosam dolorum necessitatibus, tempora accusantium? Cumque, excepturi necessitatibus!</p>
+        </div>
+    </div>
+    <div class="cards" id="about">
+        <div class="left">
+            <h2>Check Out Our Favourites</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias modi aliquam excepturi ratione dicta dignissimos ipsum iure deserunt placeat inventore maiores nisi, ea eaque aut pariatur illum debitis corrupti magnam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum natus, at ipsa, distinctio voluptas doloribus maxime repellat quas aliquam sit facere possimus consectetur nam repellendus saepe libero qui fugit.</p>
+        </div>
+        <div class="right">
+        <div class="card">
+            <img src="img/card1.jpg" alt="">
+            <div class="content">
+                <p>tulips</p>
+                <p>35$</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/card2.jpg" alt="">
+            <div class="content">
+                <p>tulips</p>
+                <p>35$</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/card3.jpg" alt="">
+            <div class="content">
+                <p>tulips</p>
+                <p>35$</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="customize" id="customize">
+        <h2>customize your own</h2>
+        <div class="parts">
+            <div class="opt">
+                <img src="img/sym1.png" alt="">
+                <span>Select Flowers</span> 
+                <p>select from a wide variety of flowers</p>
+            </div>
+            <div class="opt">
+                <img src="img/sym2.png" alt="">
+                <span>Choose Wrappings</span>
+                <p>choose wrappings & decorations to add around the bouquet</p>
+            </div>
+            <div class="opt">
+                <img src="img/sym3.png" alt="">
+                <span>Add A Note</span>
+                <p>add a lovely message for your loved ones</p>
+            </div>
+            <div class="opt">
+                <img src="img/sym4.png" alt="">
+                <span>Send The Bouquet</span>
+                <p>send the finished bouquet & see happy faces!</p>
+            </div>
+        </div>
+        <button>customize now</button>
+    </div>
+    <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="galleryimg">
+            <img src="img/gallery1.jpg" alt="">
+            <img src="img/gallery2.jpg" alt="">
+            <img src="img/gallery3.jpg" alt="">
+            <img src="img/gallery4.jpg" alt="">
+            <img src="img/gallery5.jpg" alt="">
+            <img src="img/gallery6.jpg" alt="">
+            <img src="img/gallery7.jpg" alt="">
+            <img src="img/gallery8.jpg" alt="">
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>BLOOM</h2>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#customize">customize</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="line"></div>
+        <div class="icons">
+
+        </div>
+    </div>
+    <footer>
+        <p>2025 Bloom | Powered by Responsive Theme</p>
+    </footer>
+    <script>
+        const menu = document.querySelector('.menu')
+        const nav = document.querySelector('nav')
+        const body = document.querySelector('body')
+        menu.addEventListener('click',()=>
+    {
+        nav.classList.toggle('active')
+        nav.classList.add('slow')
+    })
+    </script>
+</body>
+</html>
